@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #demo {
+  color: green;
+  font-family: Candara,Calibri,Segoe,Sego UI,Optima,Arial,sans-serif; 
+
+}
+    </style>
+<body>
+  <h1 id="demo">JavaScript</h1>
+  <button onclick="changeText()">Change to Masai</button> 
+  <button onclick="changeOriginal()">Change to Javascript</button> 
+</body>
+</html>
+<script>
+    function changeText(){
+  document.getElementById("demo").innerHTML = "MASAI SCHOOL";
+}
+
+function changeOriginal(){
+  document.getElementById("demo").innerHTML = "JavaScript";
+  document.textContent.backgroundColor = "white";
+}
+</script>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 600px;
+            background-color: hsl(0, 0%, 90%);
+            margin: auto;
+        }
+        #part1{
+            height: auto;
+        }
+        img{
+            height: 200px;
+            margin-top: 25px;
+            margin-left: 220px;
+        }
+        h1{
+            color: rgb(14, 14, 151);
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .text{
+            font-size: larger;
+            margin: auto;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .part2{
+            display: flex;
+        }
+        .verticalLine {
+            height: 120px;
+            border-left: 10px solid #000900;
+            position: absolute;
+            left: 50%;
+            margin-top: 20px;
+        }
+        .footer{
+            background-color: rgba(226, 93, 4, 0.877);
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            height: 180px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .right{
+             text-align: right;
+             margin-right: 20px
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+                <div class="part1">
+                    <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg" alt="">
+                    <h1>Linux Torvalds</h1>
+                    <h2>The creator of Linux and Github</h2>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="part2">
+                <div> <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg" alt=""></div>
+                <div>
+                    <h1 style="color: red; margin-left: 30px; text-align: left; margin-top: 30px">Salman Khan</h1>
+                    <p style="font-size: large; margin-left: 30px; margin-top: 20px;margin-right: 20px;">Salman Khan is the founder of the Khan Academy which has a mission of providing free world class education
+                        for anyone, anywhere.originally focusing on mathematics and sciences. He is also the founder of Khan Lab School,
+                         a brick-and-mortar school associated with Khan Academy.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left" style="text-align: left;">
+                <h1 style="color: white; font-family: 'Segoe UI'; margin-left: 20px; font-weight: lighter; text-align: left;"> Ken Thompson</h1>
+                <h3 style="color: black; font-family: 'Segoe UI'; margin-left: 20px;">Designed and Implimented the origional Linux Operating system</h3>
+            </div>
+            <hr class=".verticalLine">
+            <div class="right">
+                <h1 style="color: white; font-family: 'Segoe UI';margin-right: 10px;  font-weight: lighter; text-align: right"> Dennis Ritchie</h1>
+                <h3 style="color: black; font-family: 'Segoe UI';margin-right: 10px;">The creator of the  C programming language</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

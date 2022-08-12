@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        body {
+            background-color: rgb(242,237,230);
+            color: #343434;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0 auto;
+        }
+        #flex{
+            display: flex;
+            justify-content:space-around;
+            width: 100%;
+            margin-left: 0px;
+       }
+        #flex > p:nth-child(2){
+            text-decoration: line-through;
+        }
+        p{
+            width: 100%;
+            
+        }
+        div{
+            margin-left: 40px;
+        }
+        button{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Women</h1>
+    <div id="container">
+
+    </div>
+</body>
+</html>
+<script>
+  var womensData = [
+      
+  ]
+    womensData.map(function(data){
+    var div = document.createElement("div");
+    var image = document.createElement("img");
+    image.setAttribute("src", data.image_url);
+    var name = document.createElement("p");
+    name.textContent = data.name;
+    var div2 = document.createElement("div");
+    div2.setAttribute("id", "flex");
+    var p1 = document.createElement("p");
+    p1.textContent = data.price;
+    var p2 = document.createElement("p");
+    p2.textContent = data.strikedoffprice;
+    div2.append(p1,p2);
+    var btn = document.createElement("button");
+    btn.textContent = "Add To Cart";
+    div.append(image,name,div2,btn)
+    document.querySelector("#container").append(div);
+})
+</script>

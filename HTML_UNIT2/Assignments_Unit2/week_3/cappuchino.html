@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container {
+           display: grid;
+           grid-template-columns: repeat(12, 1fr);
+           grid-template-rows: repeat(3, 200px);
+           grid-template-areas: 
+           "a a a a b b b b c c c c"
+           "d d d d e e e e f f f f"
+           "g g g g h h h h i i i i";
+           grid-gap: 30px;
+       }
+       body{
+           background-image: cover;
+           font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+           background-color: #f3eee8;
+       }
+       #container > div {
+           border-radius:  10px;
+           background-color: #fefffe;
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+       }
+       #container > div:nth-child(1){
+           grid-area: a;
+       }
+       #container > div:nth-child(2){
+           grid-area: b;
+       }
+       #container > div:nth-child(3){
+           grid-area: c;
+       }
+       #container > div:nth-child(4){
+           grid-area: d;
+       }
+       #container > div:nth-child(5){
+           grid-area: e;
+       }
+       #container > div:nth-child(6){
+           grid-area: f;
+       }
+       #container > div:nth-child(7){
+           grid-area: g;
+       }
+       #container > div:nth-child(8){
+           grid-area: h;
+       }
+       #container > div:nth-child(9){
+           grid-area: i;
+       }
+       .card{
+           display: flex;
+       }
+       .left{
+            width: 85%;
+        }
+        .right{
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            color: #ccac72;
+        }
+        .two{
+            padding: 20px;
+        }
+        .card{
+            margin-left: 20px;
+        }
+        @media only screen and (min-width: 0px) and (max-width:320px){
+            #container {
+                grid-template-rows: repeat(9,200px);
+                grid-template-areas:
+                "a a a a a a a a a a a a"
+                "b b b b b b b b b b b b"
+                "c c c c c c c c c c c c"
+                "d d d d d d d d d d d d"
+                "e e e e e e e e e e e e"
+                "f f f f f f f f f f f f"
+                "g g g g g g g g g g g g"
+                "h h h h h h h h h h h h"
+                "i i i i i i i i i i i i"; 
+            }
+        }
+        @media only screen and (min-width: 321px) and (max-width: 720px){
+            #container {
+                grid-template-rows: 200px 200px 200px;
+                grid-template-areas: 
+                "a a a a b b b b c c c c"
+                "d d d d e e e e f f f f"
+                "g g g g h h h h i i i i";
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Cappuchino</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Americano</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Expresso</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Macchiato</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Mocha</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Coffee Latte</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Picollo Latte</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Restretto</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+      <div  id="one">
+        <div class="card">
+            <h1 class="left">Affogato</h1>
+            <h1 class="right">$49</h1>
+        </div>
+        <div class="two">
+            <p>Usage of the Internet is becoming common due to rapid advance in technology.</p>
+        </div>
+      </div>
+   </div>
+</body>
+</html>

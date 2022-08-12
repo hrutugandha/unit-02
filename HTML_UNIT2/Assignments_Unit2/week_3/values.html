@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Values</title>
+	<style>
+		#container{
+			height: 400px;
+			width: 400px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<input type="text" name="name" id="name" placeholder="Enter name">
+	<select id="gender">
+		<option value="">GENDER</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email" placeholder="Enter Email">
+	<input type="text" name="mobile" id="mobile" placeholder="Enter mobile">
+	<hr>
+	<button id="name" onclick="showName()">NAME</button>
+	<br>
+	<button onclick="showGender()">GENDER</button>
+	<br>
+	<button onclick="showEmail()">EMAIL</button>
+	<br>
+	<button onclick="showMobile()">MOBILE</button>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	function showName() {
+		var name = document.getElementById("name").value;
+		if(name == ""){
+			alert("Enter name")
+		}
+		else{
+			alert("Name: " + name)
+		}
+	}
+
+	function showGender() {
+		var gender = document.getElementById("gender").value;
+		alert("gender: " + gender)
+	}
+
+	function showEmail() {
+		var email = document.getElementById("email").value;
+		if(email == ""){
+			alert("Enter Email")
+		}
+		else{
+			alert("email: " + email)
+		}
+	}
+
+	function showMobile() {
+		var phone = document.getElementById("mobile").value;
+		if(phone == ""){
+			alert("Enter mobile")
+		}
+		else{
+			alert("mobile: " + phone)
+		}
+	}
+</script>

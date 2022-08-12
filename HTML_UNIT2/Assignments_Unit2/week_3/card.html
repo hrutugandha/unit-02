@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: auto;
+            width: auto;
+            border: 1px solid white;
+            display: flex;
+        }
+        div{
+            width: 286px;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        h4{
+            padding: 10px;
+        }
+        p{
+            padding: 0 0 0 10px;
+            margin-top: -15px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            border: 0px;
+            padding: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    var image = document.createElement("img");
+    image.setAttribute("src","https://monstar-lab.com/global/wp-content/uploads/sites/11/2019/04/male-placeholder-image.jpeg");
+
+    var imgdiv = document.createElement("div");
+    var carddiv = document.createElement("div");
+
+    var head4 = document.createElement("h4");
+    head4.textContent = "Alice Liddle";
+
+    var para = document.createElement("p");
+    para.textContent = "Alice is a freelance web Designer and Developer based in london. She is specialized in HTML5, CSS3, JavaScript, Bootstrap,etc"
+
+    var button = document.createElement("button");
+    button.textContent = "View Profile";
+
+    imgdiv.append(image);
+    carddiv.append(head4,para,button);
+    document.querySelector('#container').append(imgdiv,carddiv);
+</script>

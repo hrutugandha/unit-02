@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="gender">
+		<option value="">GENDER</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+    <input type="number" id="yob">
+    <button onclick="getAge()">check</button>
+</body>
+</html>
+<script>
+  function getAge(DOB) {
+
+    var yob = document.getElementById("yob").value;
+    yob = JSON.parse(yob);
+    
+    var gender = document.getElementById("gender").value;
+    
+    if(yob >= 2004 && gender == "male"){
+        alert("Illegal to marry")
+    }
+    else if(yob  >= 2006 && gender == "female"){
+        alert("Illegal to marry")
+    }
+    else{
+        alert("Valid age to marry")
+    }
+
+}
+   
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding:10px;
+            margin:10px;
+            color:white;
+            border:0;
+            font-weight: bold;
+            font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            border-radius:  6px;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    var button = [
+        {name: "Primary", bgColor: "blue"},
+        {name: "Secondary", bgColor: "grey"},
+        {name: "Success", bgColor: "green"},
+        {name: "Danger", bgColor: "red"},
+        {name: "Warning", bgColor: "yellow"},
+        {name: "Info", bgColor: "cyan"}
+    ];
+
+    button.map(function (elem) {
+        var btn = document.createElement("button");
+        btn.textContent = elem.name;
+        btn.style.backgroundColor = elem.bgColor;
+        document.querySelector("body").appendChild(btn);
+    })
+</script>

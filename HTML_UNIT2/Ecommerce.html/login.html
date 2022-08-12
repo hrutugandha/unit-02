@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            margin-left: 600px;
+        }
+        body {
+            background-color: rgb(242,237,230);
+            color: #343434;
+            margin: 0;
+            padding: 0;
+            font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .form-group {
+            display: inline-block;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <h1>Login Page</h1>
+        <form>
+            <div class="form-group">
+                <h2>Username</h2>
+                <input id="username" type="text" placeholder="Enter username">
+            </div>
+            <div>
+                <h2>Password</h2>
+                <input id="password" type="text" placeholder="Enter password">
+        </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signup);
+
+    var reguser = JSON.parse(localStorage.getItem("userDataBase"));
+
+    function signup(event) {
+        event.preventDefault();
+        var pass = document.querySelector("#password").value;
+        var user = document.querySelector("#username").value;
+
+        for (var i = 0; i < reguser.length; i++) {
+            console.log(reguser[i].username, reguser[i].password);
+            if(reguser[i].username == username && reguser[i].password == password ){
+                window.location.href = "home.html"
+            }
+            else{
+                alert("Signed in Failed");
+            }
+        }
+    }
+    var elems = document.querySelectorAll(selector);
+    for(var i=0; i<elems.length; i++){
+        console.log( elems[i].textContent )
+    }
+</script>

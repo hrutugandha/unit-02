@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise_Ticket</title>
+    <style>
+        form > input, select,textarea{
+            font-family: dongle, sans-serif;
+            margin: 30px;
+            display: block;
+            margin-left: 600px;
+            border-radius: 20px;
+        }
+        button{
+            font-family: dongle, sans-serif;
+            margin: 30px;
+            display: block;
+            margin-left: 600px;
+            border-radius: 20px;
+            color: yellow
+        }
+        h1{
+            color: #6c757d;
+            margin-left: 600px;
+            font-family: dongle, sans-serif;
+        }
+        input,select , textarea{
+            color: #264653;
+        }
+        body{
+            background-color:#f8edeb;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Raise tickets/issues</h1>
+        <select id="tickets" onchange="setTickets">
+            <option value="refund">Refund</option>
+            <option value="itemmissing">Item missing</option>
+            <option value="orderstatus">Order status</option>Refund</option>
+            <option value="delivered">Delivery</option>Refund</option>
+            <option value="feedback">Feedback</option>
+        </select>
+        <input type="date">
+        <Select>
+            <option value="" Sort by ticket number>ticket number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </Select>
+        <textarea name="tickets" rows="10" cols="40" id="tickets" placeholder="enter description">
+        </textarea>
+        <select>
+            <option value="" ticket number>filter by ticket number</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+        </select>
+        <input type="submit" value="Submit" onclick="alert('Submitted Successfully!')">
+    </form>
+</body>
+</html>
+<script>
+    function displayTable(quearyArr) {
+}
+</script>
